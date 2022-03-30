@@ -1,1 +1,1 @@
-# Repositorio del curso CI0126 ingeniería de Software
+# Repositorio del curso CI0126 Ingeniería de Software
