@@ -1,1 +1,1 @@
-# Inge_Software_Javier_Molina
+# Repositorio del curso CI0126 Ingeniería de Software
