@@ -9,7 +9,7 @@ namespace Lab3.Controllers
         {
             var movies = GetListOfMovies();
             ViewBag.MainTitle = "List of my favorite films";
-            return View();
+            return View(movies);
         }
 
         private List<MovieModel> GetListOfMovies()
