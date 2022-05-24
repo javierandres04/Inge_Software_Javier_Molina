@@ -85,6 +85,34 @@ namespace Laboratorio5.Controllers
             }
         }
 
+        [HttpGet]
+        public ActionResult BorrarPais(int identificador)
+        {
+            ActionResult vista;
+            try
+            {
+                var paisesHandler = new PaisesHandler();
+                
+                PaisModel pais=new PaisModel();
+                pais.Id = identificador;
+                bool exito = paisesHandler.BorrarPais(pais);
+                if (exito)
+                {
+                    vista = RedirectToAction("Index");
+                    ViewBag.Message = "El país fue borrado con éxito";
+                } else
+                {
+                    ViewBag.Message = "Algo salió mal y no fue posible borrar el país";
+                    vista = RedirectToAction("Index");
+                }
+            }
+            catch
+            {
+                vista = RedirectToAction("Index");
+            }
+            return vista;
+        }
+
     }
 
 }

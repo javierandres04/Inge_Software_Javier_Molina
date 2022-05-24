@@ -76,7 +76,7 @@ namespace Laboratorio5.Handlers
 
         public bool BorrarPais(PaisModel pais)
         {
-            var consulta = @"delete [dbo].[pais] where Id = @Id";
+            var consulta = @"delete from [dbo].[pais] where Id = @Id";
             var comandoParaConsulta = new SqlCommand(consulta, conexion);
             comandoParaConsulta.Parameters.AddWithValue("@Id", pais.Id);
             conexion.Open();
