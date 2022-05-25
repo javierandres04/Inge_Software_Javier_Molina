@@ -98,11 +98,9 @@ namespace Laboratorio5.Controllers
                 bool exito = paisesHandler.BorrarPais(pais);
                 if (exito)
                 {
-                    vista = RedirectToAction("Index");
-                    ViewBag.Message = "El país fue borrado con éxito";
+                    vista = RedirectToAction("Index", "Paises");
                 } else
                 {
-                    ViewBag.Message = "Algo salió mal y no fue posible borrar el país";
                     vista = RedirectToAction("Index");
                 }
             }
