@@ -1,0 +1,403 @@
+{
+  "id": "e5f5bec0-df3e-4f01-9ed8-176c966d0740",
+  "version": "2.0",
+  "name": "UITestLaboratorio8",
+  "url": "https://localhost:44304",
+  "tests": [{
+    "id": "50309a6e-57d6-4706-bd09-789dc4c78248",
+    "name": "PruebaUno",
+    "commands": [{
+      "id": "ddaf09bc-ab91-4a7c-8b0e-457247158424",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37131235-ae31-43c7-955f-b9228ae6c37c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1265x1400",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77886045-82b1-477d-bdbc-9e34501615eb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.display-4",
+      "targets": [
+        ["css=.display-4", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Welcome')]", "xpath:innerText"]
+      ],
+      "value": "Welcome"
+    }, {
+      "id": "03756988-a750-4151-9cf4-41bd5a19737d",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=building Web apps with ASP.NET Core",
+      "targets": [
+        ["linkText=building Web apps with ASP.NET Core", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'building Web apps with ASP.NET Core')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://docs.microsoft.com/aspnet/core')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'building Web apps with ASP.NET Core')]", "xpath:innerText"]
+      ],
+      "value": "building Web apps with ASP.NET Core"
+    }, {
+      "id": "398d5251-7f02-4f8c-946a-b7ddcca759c8",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Laboratorio5",
+      "targets": [
+        ["linkText=Laboratorio5", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'Laboratorio5')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Laboratorio5')]", "xpath:innerText"]
+      ],
+      "value": "Laboratorio5"
+    }, {
+      "id": "e5e77710-b4b8-4c05-b247-62404abc3bb9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Países",
+      "targets": [
+        ["linkText=Países", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Países')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Paises')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Países')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f274c8e-303c-4be7-bbdb-bf24f502eb0e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Países",
+      "targets": [
+        ["linkText=Países", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Países')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Paises')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Países')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9faeb7d6-c147-4bb7-a25a-d864be66de75",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Países",
+      "targets": [
+        ["linkText=Países", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Países')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Paises')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Países')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a61beb80-49c5-4a29-8649-8fbe6b341dc8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Lista de países')]", "xpath:innerText"]
+      ],
+      "value": "Lista de países"
+    }]
+  }, {
+    "id": "227f12eb-0d7d-4537-895f-059c4964e7c5",
+    "name": "CrearEditarPais",
+    "commands": [{
+      "id": "68f02afd-16d4-4af5-bf12-5f9ec38a89b9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66a33f5f-58c6-4f82-86c4-d825d1fa437d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1265x1400",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3a160e3-1e1d-47fd-90a7-653ab4b9d1a0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Países",
+      "targets": [
+        ["linkText=Países", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Países')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Paises')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Países')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf4633fe-06f5-464c-96d0-33f0b204b1d1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crear País",
+      "targets": [
+        ["linkText=Crear País", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear País')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Paises/CrearPais')]", "xpath:href"],
+        ["xpath=//main/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear País')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1c24756-23c8-4512-98dc-e882afc0cccc",
+      "comment": "",
+      "command": "click",
+      "target": "id=Nombre",
+      "targets": [
+        ["id=Nombre", "id"],
+        ["name=Nombre", "name"],
+        ["css=#Nombre", "css:finder"],
+        ["xpath=//input[@id='Nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3aa3faf6-f5ad-4bc2-a74f-0efd0addca73",
+      "comment": "",
+      "command": "type",
+      "target": "id=Nombre",
+      "targets": [
+        ["id=Nombre", "id"],
+        ["name=Nombre", "name"],
+        ["css=#Nombre", "css:finder"],
+        ["xpath=//input[@id='Nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Suecia"
+    }, {
+      "id": "1927d120-9b65-493d-8eb7-b27090648ffe",
+      "comment": "",
+      "command": "click",
+      "target": "id=Continente",
+      "targets": [
+        ["id=Continente", "id"],
+        ["name=Continente", "name"],
+        ["css=#Continente", "css:finder"],
+        ["xpath=//select[@id='Continente']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'-Sin selección-\nAmérica\nAsia\nEuropa\nOceanía\nAntártida\nÁfrica')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1eded84-d181-47fe-a75d-c210efd2e112",
+      "comment": "",
+      "command": "select",
+      "target": "id=Continente",
+      "targets": [],
+      "value": "label=Europa"
+    }, {
+      "id": "8b07e1b0-ccf3-41bd-a1df-17782a5f65be",
+      "comment": "",
+      "command": "click",
+      "target": "id=Idioma",
+      "targets": [
+        ["id=Idioma", "id"],
+        ["name=Idioma", "name"],
+        ["css=#Idioma", "css:finder"],
+        ["xpath=//input[@id='Idioma']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af7e72cc-40af-484a-bb4f-d492d94cf7dc",
+      "comment": "",
+      "command": "type",
+      "target": "id=Idioma",
+      "targets": [
+        ["id=Idioma", "id"],
+        ["name=Idioma", "name"],
+        ["css=#Idioma", "css:finder"],
+        ["xpath=//input[@id='Idioma']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Sueco"
+    }, {
+      "id": "05d1dc3f-0aea-4a61-bee3-3360cc57e70e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Crear']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1339a08-4a15-4988-abe7-e062832dd95b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Países",
+      "targets": [
+        ["linkText=Países", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Países')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Paises')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Países')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3e5a458-f4f2-4a1e-a7d4-a5e8b7c140d2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Países",
+      "targets": [
+        ["linkText=Países", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Países')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Paises')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Países')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08053d3c-0e29-440e-96b7-90b98061128f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Países",
+      "targets": [
+        ["linkText=Países", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Países')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Paises')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Países')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c297c37-dfb0-4f44-912e-49f97fbf7987",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1524455-1cb8-45bd-aea5-7bb42763f866",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(8) .alert-info",
+      "targets": [
+        ["css=tr:nth-child(8) .alert-info", "css:finder"],
+        ["xpath=(//a[contains(text(),'Editar')])[8]", "xpath:link"],
+        ["xpath=(//a[@onclick=\"return confirm('¿Quiere editar este país?');\"])[8]", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Paises/EditarPais?identificador=12')]", "xpath:href"],
+        ["xpath=//tr[8]/td[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2952eaad-bb7a-4d37-9947-09142a4aeacb",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "¿Quiere editar este país?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c993a6d-bb8a-4f10-8a76-34b5400c22a7",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f5ab5f5-21fc-4340-b88d-f19d2ace5104",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c19d7f1-792c-45d0-8780-9d0f5a6793ea",
+      "comment": "",
+      "command": "type",
+      "target": "id=Nombre",
+      "targets": [
+        ["id=Nombre", "id"],
+        ["name=Nombre", "name"],
+        ["css=#Nombre", "css:finder"],
+        ["xpath=//input[@id='Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Suiza"
+    }, {
+      "id": "548e8cf8-8742-4e3c-bf91-46a70cf8cc5e",
+      "comment": "",
+      "command": "click",
+      "target": "id=Idioma",
+      "targets": [
+        ["id=Idioma", "id"],
+        ["name=Idioma", "name"],
+        ["css=#Idioma", "css:finder"],
+        ["xpath=//input[@id='Idioma']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "342f47dd-4e00-4688-b498-e12890bda818",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container:nth-child(2)",
+      "targets": [
+        ["css=.container:nth-child(2)", "css:finder"],
+        ["xpath=//body/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "289ecd31-e210-426d-a813-52f34693522a",
+      "comment": "",
+      "command": "type",
+      "target": "id=Idioma",
+      "targets": [
+        ["id=Idioma", "id"],
+        ["name=Idioma", "name"],
+        ["css=#Idioma", "css:finder"],
+        ["xpath=//input[@id='Idioma']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Suizo"
+    }, {
+      "id": "50515118-5dec-410b-b208-a9f34be364f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Aplicar cambios']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "be154ef4-1b33-4901-bd77-d6110e23b57b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["50309a6e-57d6-4706-bd09-789dc4c78248"]
+  }],
+  "urls": ["https://localhost:44304/"],
+  "plugins": []
+}
